@@ -1,0 +1,1226 @@
+[
+  {
+    "id": "crops",
+    "name": "種植與作物照顧島",
+    "category": "耕作與生態",
+    "type": "crop-garden",
+    "icon": "seed",
+    "desc": "開墾、播種、澆水、捉蟲、施肥與有機栽培屬於同一套作物經營。本島用不同作物的外形和成長特徵介紹種植，並在島內比較水分、蟲害、化肥、有機肥及有機狀態。",
+    "facts": [
+      "多種作物與不同生長外形",
+      "播種／澆水／捉蟲／施肥",
+      "有機狀態與農產收成"
+    ],
+    "steps": [
+      "挑選品種，開墾並播種。",
+      "依水分、蟲害與經營目標照顧作物。",
+      "成熟後收成，查看農產與有機狀態。"
+    ],
+    "source": [
+      "crops",
+      "soilLook",
+      "care",
+      "pests",
+      "organic",
+      "ui"
+    ],
+    "links": [
+      "water",
+      "processing",
+      "honey",
+      "greenhouse"
+    ]
+  },
+  {
+    "id": "trees",
+    "name": "果樹島",
+    "category": "耕作與生態",
+    "type": "trees",
+    "icon": "deco",
+    "desc": "果樹會經歷幼苗、生長與結果，在農場留下長期收穫的節奏。柑橘樹也和蝴蝶的生命週期相連。",
+    "facts": [
+      "15 種果樹",
+      "首次結果與再次結果",
+      "柑橘寄主"
+    ],
+    "steps": [
+      "挑選可種植的果樹。",
+      "照顧水分，等待首次結果。",
+      "採收成熟果實，繼續等待下一輪。"
+    ],
+    "source": [
+      "trees",
+      "decoSeasons"
+    ],
+    "links": [
+      "honey",
+      "crops",
+      "storage"
+    ]
+  },
+  {
+    "id": "flowers",
+    "name": "花卉與花苗島",
+    "category": "耕作與生態",
+    "type": "flower-system",
+    "icon": "deco",
+    "desc": "花苗、開花與月份限制是同一套花卉玩法。全年花苗、本月可種的花和下月預告放在同島介紹；月份依農場當地日期，南半球偏移六個月，種下後跨月仍繼續生長。",
+    "facts": [
+      "花苗 → 成長 → 開花",
+      "全年／本月／下月花苗",
+      "當地月份與南半球偏移"
+    ],
+    "steps": [
+      "查看全年花苗與本月可種的品種。",
+      "安排種植位置，持續供水與照顧。",
+      "觀察開花與蜜蜂花源，已種植物跨月仍會生長。"
+    ],
+    "source": [
+      "flowers",
+      "flowerRules",
+      "flowerRules.season",
+      "flowerRules.tray"
+    ],
+    "links": [
+      "honey",
+      "decor",
+      "weather"
+    ]
+  },
+  {
+    "id": "honey",
+    "name": "蜜蜂、熊蜂與蝴蝶島",
+    "category": "耕作與生態",
+    "type": "bee-system",
+    "icon": "insect",
+    "desc": "蜂箱、蜜蜂與熊蜂的採蜜授粉，和蝴蝶的寄主植物、卵、幼蟲、蛹、成蝶，都在同一座昆蟲生態島介紹。新版蝴蝶有27種，依寄主植物、等級與稀有度區分；死亡後可收集圖鑑，並有機會取得標本。",
+    "facts": [
+      "蜜蜂／熊蜂採蜜與授粉",
+      "27種蝴蝶 · 5科 · 寄主植物",
+      "蟲卵 → 幼蟲 → 蛹 → 成蝶"
+    ],
+    "steps": [
+      "選擇蜂箱、蜂群或依寄主配置蝴蝶卵。",
+      "照顧花源與寄主，觀察蜂群工作和蝴蝶四階段。",
+      "採收蜂蜜，記錄蝴蝶圖鑑與標本。"
+    ],
+    "source": [
+      "bees",
+      "bees.bumble",
+      "devices.beehive",
+      "devices.bumble_hive",
+      "butterflies"
+    ],
+    "links": [
+      "flowers",
+      "robot-honey",
+      "weather"
+    ]
+  },
+  {
+    "id": "poultry",
+    "name": "家禽島",
+    "category": "動物與養殖",
+    "type": "poultry",
+    "icon": "animal",
+    "desc": "蛋雞、鴨與鵝各有不同的成長和產出。產物型與肉用型的收穫方式不同，飼料、照明與安全也會影響照顧安排。",
+    "facts": [
+      "蛋雞、鴨與鵝",
+      "雞蛋與羽絨",
+      "餵食與出貨"
+    ],
+    "steps": [
+      "購買已解鎖的幼禽。",
+      "準備對應飼料，餵食並等待成長。",
+      "依種類收集產物或出貨。"
+    ],
+    "source": [
+      "animals",
+      "eggNest"
+    ],
+    "links": [
+      "processing",
+      "robot-feed",
+      "guard"
+    ]
+  },
+  {
+    "id": "livestock",
+    "name": "畜牧島",
+    "category": "動物與養殖",
+    "type": "livestock",
+    "icon": "animal",
+    "desc": "綿羊、山羊、乳牛與其他牲畜，將農場從種植延伸到畜牧。留意生命週期、餵食與產物狀態，才能安排穩定的工作節奏。",
+    "facts": [
+      "羊毛、奶類與肉用",
+      "不同成長階段",
+      "牧場漫遊"
+    ],
+    "steps": [
+      "購買幼畜，安排牧場空間。",
+      "持續餵養並等待成長。",
+      "收集產物，照顧環境與動物狀態。"
+    ],
+    "source": [
+      "animals",
+      "animalRoam",
+      "poop"
+    ],
+    "links": [
+      "robot-feed",
+      "robot-poop",
+      "processing"
+    ]
+  },
+  {
+    "id": "fish",
+    "name": "魚池與水產養殖島",
+    "category": "動物與養殖",
+    "type": "fish",
+    "icon": "fish",
+    "desc": "從逐格建造魚池、放入魚苗，到魚蝦蟹養殖、餵食與收成，是同一套水產玩法。魚池資訊則是管理這套玩法的介面，包含位置地圖、成長與餵養狀態，放在本島一併介紹。",
+    "facts": [
+      "魚池與魚蝦蟹養殖",
+      "餵食、成長與收成",
+      "魚池資訊與位置地圖"
+    ],
+    "steps": [
+      "建造魚池，放入魚苗。",
+      "準備魚飼料並餵養。",
+      "等待成長，收成並調整池形。"
+    ],
+    "source": [
+      "fishPool",
+      "fish",
+      "ui"
+    ],
+    "links": [
+      "processing",
+      "lighting",
+      "capacity"
+    ]
+  },
+  {
+    "id": "pets",
+    "name": "寵物狗、貓與鳥島",
+    "category": "動物與養殖",
+    "type": "pets",
+    "icon": "animal",
+    "desc": "貓狗有名字、成長與食物需求，也有各自的能力。寵物窩、夜間休息與互動，讓小島多了陪伴。 新增11種寵物鳥：鳥屋、鳥飼料與抓蟲工作，並各有歌聲、預防蟲害、警報或果樹加成等技能；夜間、下雨及下雪回鳥屋。",
+    "facts": [
+      "11種狗 · 5種貓 · 11種鳥",
+      "狗屋／貓跳台／鳥屋",
+      "驅趕天敵 · 抓鼠 · 抓蟲"
+    ],
+    "steps": [
+      "準備寵物與對應住處。",
+      "命名、餵食，等待成長。",
+      "與寵物互動，留意技能與休息狀態。"
+    ],
+    "source": [
+      "pets",
+      "birds240"
+    ],
+    "links": [
+      "guard",
+      "capacity"
+    ]
+  },
+  {
+    "id": "greenhouse",
+    "name": "溫室島",
+    "category": "環境與照顧",
+    "type": "greenhouse",
+    "icon": "build",
+    "desc": "溫室逐格建造與連接，提供不同於露天田地的環境。雨雪、病蟲害、夜間生長與專用生長燈都有對應設定。",
+    "facts": [
+      "逐格連接",
+      "雨雪與環境防護",
+      "溫室生長燈"
+    ],
+    "steps": [
+      "依解鎖條件規劃溫室區域。",
+      "安排植物與專用照明。",
+      "留意環境差異，調整經營配置。"
+    ],
+    "source": [
+      "greenhouse",
+      "devices.gh_lamp"
+    ],
+    "links": [
+      "lighting",
+      "weather",
+      "crops"
+    ]
+  },
+  {
+    "id": "processing",
+    "name": "加工島",
+    "category": "設施與經營",
+    "type": "processing",
+    "icon": "build",
+    "desc": "玉米餅機、魚飼料機與堆肥桶，把農產、飼料與照顧材料串成循環。每一座機器都有材料與加工時間。",
+    "facts": [
+      "玉米餅機",
+      "魚飼料機",
+      "堆肥桶"
+    ],
+    "steps": [
+      "建置已解鎖的加工機器。",
+      "備妥材料，開始加工。",
+      "收取成品，供餵食或照顧使用。"
+    ],
+    "source": [
+      "machines",
+      "machineUpgrade"
+    ],
+    "links": [
+      "crops",
+      "poultry",
+      "fish"
+    ]
+  },
+  {
+    "id": "storage",
+    "name": "倉儲島",
+    "category": "設施與經營",
+    "type": "storage",
+    "icon": "build",
+    "desc": "農產倉庫與飾品倉庫分別管理收成和物件。容量、收回、搬移與出售，都是持續擴張前需要安排的事。",
+    "facts": [
+      "農產倉庫",
+      "飾品倉庫",
+      "庫存與容量"
+    ],
+    "steps": [
+      "收成農產，查看倉庫庫存。",
+      "整理物件與需要保留的材料。",
+      "依需求安排出售、加工與增容。"
+    ],
+    "source": [
+      "buildings.barn",
+      "buildings.shed",
+      "storeBack",
+      "storeFirst"
+    ],
+    "links": [
+      "processing",
+      "capacity"
+    ]
+  },
+  {
+    "id": "water",
+    "name": "供水島",
+    "category": "設施與經營",
+    "type": "water",
+    "icon": "water",
+    "desc": "水塔不只是裝飾：雨水、自來水、水井與融雪，讓用水有不同來源。無人機與灑水器也需要安排供水。",
+    "facts": [
+      "水塔與加掛水塔",
+      "雨水、自來水、水井",
+      "用水與帳單"
+    ],
+    "steps": [
+      "查看水塔儲量與水源。",
+      "規劃人工或自動澆水。",
+      "留意補水與水費使用紀錄。"
+    ],
+    "source": [
+      "water",
+      "buildings.water_tower",
+      "billing"
+    ],
+    "links": [
+      "robot-water",
+      "robot-wellbot",
+      "weather"
+    ]
+  },
+  {
+    "id": "power",
+    "name": "電力與發電島",
+    "category": "設施與經營",
+    "type": "power-system",
+    "icon": "build",
+    "desc": "發電和電力是同一套能源系統：太陽能板、手搖發電機、生質發電機、電池與農場電力，都放在同島比較。供電再連到照明、充電站、機器人與水電帳單。",
+    "facts": [
+      "太陽能／手搖／生質發電",
+      "電池、儲電與農場電力",
+      "照明與自動化充電"
+    ],
+    "steps": [
+      "比較太陽能、手搖、生質發電與農場供電。",
+      "配置電池及需要供電的設施。",
+      "查看電量、充電安排與用電帳單。"
+    ],
+    "source": [
+      "power",
+      "electricity",
+      "devices.solar_panel",
+      "devices.hand_crank",
+      "devices.biomass_gen",
+      "billing"
+    ],
+    "links": [
+      "lighting",
+      "grow-lights",
+      "street-lights",
+      "billing",
+      "robot-water"
+    ]
+  },
+  {
+    "id": "lighting",
+    "name": "照明島",
+    "category": "設施與經營",
+    "type": "lighting",
+    "icon": "build",
+    "desc": "生長燈、溫室燈、路燈與水底燈各有不同用途。燈光把夜間的視覺和生長條件帶進農場配置。",
+    "facts": [
+      "植物生長燈",
+      "路燈與花園燈",
+      "魚池水底燈"
+    ],
+    "steps": [
+      "選擇合適的燈具。",
+      "安排照明位置與供電。",
+      "切換日夜，觀察照明區域。"
+    ],
+    "source": [
+      "devices",
+      "houseLight",
+      "storageLight"
+    ],
+    "links": [
+      "power",
+      "fish",
+      "greenhouse"
+    ]
+  },
+  {
+    "id": "robot-water",
+    "name": "澆水無人機島",
+    "category": "自動化夥伴",
+    "type": "drone",
+    "icon": "auto",
+    "desc": "澆水無人機有自己的工作對象、基地與出勤條件。購買或租用、電量、充電排隊與待命狀態，都需要配合農場當下的工作量。",
+    "facts": [
+      "無人機停機坪",
+      "補水與充電",
+      "自動澆水"
+    ],
+    "steps": [
+      "準備已解鎖的夥伴與對應設施。",
+      "安排無人機停機坪相關的工作條件。",
+      "查看工作、待命與補給狀態。"
+    ],
+    "source": [
+      "robots.kinds.water",
+      "robots.dispatch",
+      "automationUnits"
+    ],
+    "links": [
+      "water",
+      "power",
+      "crops"
+    ]
+  },
+  {
+    "id": "robot-feed",
+    "name": "餵食機器人島",
+    "category": "自動化夥伴",
+    "type": "robot-feed",
+    "icon": "feedbot",
+    "desc": "餵食機器人有自己的工作對象、基地與出勤條件。購買或租用、電量、充電排隊與待命狀態，都需要配合農場當下的工作量。",
+    "facts": [
+      "對應動物飼料",
+      "餵食工作",
+      "充電與排隊"
+    ],
+    "steps": [
+      "準備已解鎖的夥伴與對應設施。",
+      "安排對應動物飼料相關的工作條件。",
+      "查看工作、待命與補給狀態。"
+    ],
+    "source": [
+      "robots.kinds.feed",
+      "robots.dispatch",
+      "automationUnits"
+    ],
+    "links": [
+      "processing",
+      "livestock"
+    ]
+  },
+  {
+    "id": "robot-snow",
+    "name": "除雪機器人島",
+    "category": "自動化夥伴",
+    "type": "robot-snow",
+    "icon": "snowbot",
+    "desc": "除雪機器人有自己的工作對象、基地與出勤條件。購買或租用、電量、充電排隊與待命狀態，都需要配合農場當下的工作量。",
+    "facts": [
+      "積雪清理",
+      "冬季工作",
+      "充電與出勤"
+    ],
+    "steps": [
+      "準備已解鎖的夥伴與對應設施。",
+      "安排積雪清理相關的工作條件。",
+      "查看工作、待命與補給狀態。"
+    ],
+    "source": [
+      "robots.kinds.snow",
+      "robots.dispatch",
+      "automationUnits"
+    ],
+    "links": [
+      "weather"
+    ]
+  },
+  {
+    "id": "robot-sweep",
+    "name": "掃地機器人島",
+    "category": "自動化夥伴",
+    "type": "robot-sweep",
+    "icon": "sweeper",
+    "desc": "掃地機器人有自己的工作對象、基地與出勤條件。購買或租用、電量、充電排隊與待命狀態，都需要配合農場當下的工作量。",
+    "facts": [
+      "雜草與垃圾",
+      "掃地基座",
+      "派工門檻"
+    ],
+    "steps": [
+      "準備已解鎖的夥伴與對應設施。",
+      "安排雜草與垃圾相關的工作條件。",
+      "查看工作、待命與補給狀態。"
+    ],
+    "source": [
+      "robots.kinds.sweep",
+      "robots.dispatch",
+      "automationUnits"
+    ],
+    "links": [
+      "trash"
+    ]
+  },
+  {
+    "id": "robot-poop",
+    "name": "鏟屎官機器人島",
+    "category": "自動化夥伴",
+    "type": "robot-poop",
+    "icon": "poopbot",
+    "desc": "鏟屎官機器人有自己的工作對象、基地與出勤條件。購買或租用、電量、充電排隊與待命狀態，都需要配合農場當下的工作量。",
+    "facts": [
+      "清理排泄物",
+      "攜帶容量",
+      "牧場維護"
+    ],
+    "steps": [
+      "準備已解鎖的夥伴與對應設施。",
+      "安排清理排泄物相關的工作條件。",
+      "查看工作、待命與補給狀態。"
+    ],
+    "source": [
+      "robots.kinds.poop",
+      "robots.dispatch",
+      "automationUnits"
+    ],
+    "links": [
+      "livestock"
+    ]
+  },
+  {
+    "id": "robot-honey",
+    "name": "採蜜機器人島",
+    "category": "自動化夥伴",
+    "type": "robot-honey",
+    "icon": "honeybot",
+    "desc": "採蜜機器人有自己的工作對象、基地與出勤條件。購買或租用、電量、充電排隊與待命狀態，都需要配合農場當下的工作量。",
+    "facts": [
+      "採蜜工作",
+      "蜂箱與蜂蜜",
+      "自動化分工"
+    ],
+    "steps": [
+      "準備已解鎖的夥伴與對應設施。",
+      "安排採蜜工作相關的工作條件。",
+      "查看工作、待命與補給狀態。"
+    ],
+    "source": [
+      "robots.kinds.honey",
+      "robots.dispatch",
+      "automationUnits"
+    ],
+    "links": [
+      "honey"
+    ]
+  },
+  {
+    "id": "robot-wellbot",
+    "name": "水井機器人島",
+    "category": "自動化夥伴",
+    "type": "robot-wellbot",
+    "icon": "wellbot",
+    "desc": "水井機器人有自己的工作對象、基地與出勤條件。購買或租用、電量、充電排隊與待命狀態，都需要配合農場當下的工作量。",
+    "facts": [
+      "水井取水",
+      "吊桶搬運",
+      "補充供水"
+    ],
+    "steps": [
+      "準備已解鎖的夥伴與對應設施。",
+      "安排水井取水相關的工作條件。",
+      "查看工作、待命與補給狀態。"
+    ],
+    "source": [
+      "robots.kinds.wellbot",
+      "robots.dispatch",
+      "automationUnits"
+    ],
+    "links": [
+      "water"
+    ]
+  },
+  {
+    "id": "trash",
+    "name": "垃圾與資源回收島",
+    "category": "環境與照顧",
+    "type": "trash",
+    "icon": "build",
+    "desc": "垃圾、資源回收與清運屬於同一套農場環境管理流程。從垃圾站分類與容量、車輛到訪到人工或機器人搬運，都放在本島介紹；倒垃圾與資源回收機器人是這套流程中的兩種工作夥伴。",
+    "facts": [
+      "垃圾站與分類容量",
+      "垃圾車／回收車逐島清運",
+      "倒垃圾與回收機器人"
+    ],
+    "steps": [
+      "安排垃圾站與停車場，分類集中農場廢棄物。",
+      "等待垃圾車或回收車依路線到訪。",
+      "人工或由對應機器人搬運，留意費用、容量與溢出。"
+    ],
+    "source": [
+      "trash",
+      "fleet",
+      "buildings.trash_station",
+      "buildings.truck_pad",
+      "robots.kinds.trashbot",
+      "robots.kinds.recyclebot"
+    ],
+    "links": [
+      "billing",
+      "guard",
+      "water"
+    ]
+  },
+  {
+    "id": "weather",
+    "name": "氣候、天氣與災害島",
+    "category": "環境與照顧",
+    "type": "weather-system",
+    "icon": "care",
+    "desc": "地點與季節、晴天和下雨、降雪與地面積雪，以及龍捲風等環境事件屬於同一套天氣系統。本島一併介紹天氣預報、田地與水塔變化、積雪整理及事件後的復原。",
+    "facts": [
+      "晴雨、降雪與積雪",
+      "地點、季節與天氣預報",
+      "龍捲風／地震與後續整理"
+    ],
+    "steps": [
+      "設定地點，查看季節、日夜與天氣預報。",
+      "依晴雨、積雪或災害狀態調整照顧。",
+      "整理受影響區域，安排補水、鏟雪與復原。"
+    ],
+    "source": [
+      "cities",
+      "climate",
+      "seasons",
+      "weather",
+      "forecast",
+      "snow",
+      "tornado",
+      "earthquake"
+    ],
+    "links": [
+      "dolls",
+      "water",
+      "greenhouse",
+      "robot-snow"
+    ]
+  },
+  {
+    "id": "guard",
+    "name": "外來動物與防護島",
+    "category": "動物與養殖",
+    "type": "farm-defense",
+    "icon": "animal",
+    "desc": "老鼠、黃鼠狼、狐狸與野狼同屬農場防護系統，但造成的損失不同。老鼠影響倉庫與垃圾環境，黃鼠狼以雞蛋為目標，狐狸和野狼則影響家禽與牲畜。",
+    "facts": [
+      "老鼠：庫存與環境",
+      "黃鼠狼：雞蛋",
+      "狐狸／野狼：家禽與牲畜"
+    ],
+    "steps": [
+      "查看事件與受影響的物件。",
+      "依各種動物的規則處理或驅趕。",
+      "配合寵物、溫室與環境管理安排防護。"
+    ],
+    "source": [
+      "rats",
+      "predators",
+      "pets.skills"
+    ],
+    "links": [
+      "pets",
+      "trash",
+      "storage",
+      "poultry",
+      "livestock"
+    ]
+  },
+  {
+    "id": "dolls",
+    "name": "天氣娃娃系列島",
+    "category": "環境與照顧",
+    "type": "dolls",
+    "icon": "deco",
+    "desc": "晴天、雨天、雪女與雷神娃娃在同島介紹。雷神娃娃會降雨補水，並在雷擊時逐步替電池充電；小、中、大分別持續10、15、20分鐘，充入放下時總電池容量的20%、50%、100%，免費且不列入電費。",
+    "facts": [
+      "晴天／雨天／雪女／雷神",
+      "雷雨補水 · 雷擊充電",
+      "同時最多放置1個娃娃"
+    ],
+    "steps": [
+      "依需求選晴天、雨天、雪女或雷神娃娃。",
+      "比較尺寸與持續時間；雷神另外比較電池充電比例。",
+      "放置後觀察天氣與充電，收回可保留剩餘時間。"
+    ],
+    "source": [
+      "weatherDolls.types",
+      "weatherDolls.sizes",
+      "weatherDolls.rules",
+      "weatherDolls.types.thunder"
+    ],
+    "links": [
+      "weather",
+      "water"
+    ]
+  },
+  {
+    "id": "decor",
+    "name": "佈置島",
+    "category": "創作與長期經營",
+    "type": "decor",
+    "icon": "deco",
+    "desc": "道路、圍欄、樹木與裝飾構成農場的個性。搬移、收回與重新放置，讓你能隨著經營不斷調整動線。",
+    "facts": [
+      "道路與圍欄",
+      "裝飾與景觀",
+      "搬移、收回、剷除"
+    ],
+    "steps": [
+      "選擇道路、圍欄和裝飾。",
+      "規劃動線與工作區域。",
+      "搬移或收回物件，繼續調整佈局。"
+    ],
+    "source": [
+      "decos",
+      "move",
+      "moveFees",
+      "storeBack"
+    ],
+    "links": [
+      "land-expansion",
+      "flowers",
+      "guard"
+    ]
+  },
+  {
+    "id": "capacity",
+    "name": "容量升級島",
+    "category": "創作與長期經營",
+    "type": "capacity",
+    "icon": "build",
+    "desc": "這裡介紹倉庫、水量、動物、魚池、溫室、寵物和垃圾站等個別容量上限的提升。土地擴張與開拓新島則由另外兩座介紹島說明。",
+    "facts": [
+      "個別系統容量上限",
+      "倉庫、水量與養殖",
+      "與土地擴張分開"
+    ],
+    "steps": [
+      "找出目前限制生產的容量。",
+      "查看對應增容條件與費用。",
+      "擴充後調整生產與設施配置。"
+    ],
+    "source": [
+      "boost",
+      "levels"
+    ],
+    "links": [
+      "storage",
+      "water",
+      "fish",
+      "land-expansion"
+    ]
+  },
+  {
+    "id": "achievements",
+    "name": "成就島",
+    "category": "創作與長期經營",
+    "type": "achievements",
+    "icon": "book",
+    "desc": "成就、徽章與每日簽到，留下農場逐步成長的紀錄。它們提供長期目標，也讓每次回到小島都有新的里程碑。",
+    "facts": [
+      "成就與分級獎勵",
+      "徽章",
+      "每日簽到"
+    ],
+    "steps": [
+      "查看可達成的成就條件。",
+      "透過日常經營逐步累積。",
+      "領取已達成的獎勵與簽到內容。"
+    ],
+    "source": [
+      "achievements",
+      "checkin"
+    ],
+    "links": [
+      "land-expansion",
+      "storage"
+    ]
+  },
+  {
+    "id": "save",
+    "name": "存檔島",
+    "category": "創作與長期經營",
+    "type": "save",
+    "icon": "book",
+    "desc": "原遊戲支援多座獨立農場、匯出匯入存檔，以及 Google 帳號相關的跨裝置保存功能。把你的農場帶到下一次遊玩。",
+    "facts": [
+      "多農場存檔",
+      "匯出與匯入",
+      "Google 相關雲端保存"
+    ],
+    "steps": [
+      "為農場命名並持續保存進度。",
+      "換裝置前使用原遊戲的存檔功能。",
+      "依原遊戲介面匯入或登入接續。"
+    ],
+    "source": [
+      "cloudSave",
+      "ui",
+      "meta"
+    ],
+    "links": [
+      "land-expansion",
+      "achievements"
+    ]
+  },
+  {
+    "id": "billing",
+    "name": "水電帳單島",
+    "category": "設施與經營",
+    "type": "utilitybill",
+    "icon": "build",
+    "desc": "水電帳單合併介紹用水、用電、基礎費、使用費與繳費。結算週期、早繳優惠、自動繳費、逾期費與帳單歷史，都是同一套費用管理流程。",
+    "facts": [
+      "水量／電量與使用費",
+      "結算週期與帳單明細",
+      "繳費、優惠與逾期"
+    ],
+    "steps": [
+      "查看水表、電表及各項費率。",
+      "核對基礎費、使用費與當期帳單。",
+      "依結算週期繳費，查看費用紀錄。"
+    ],
+    "source": [
+      "water",
+      "electricity",
+      "billing",
+      "utilityLog"
+    ],
+    "links": [
+      "water",
+      "power",
+      "coin-log"
+    ]
+  },
+  {
+    "id": "guidebook",
+    "name": "圖鑑島",
+    "category": "創作與長期經營",
+    "type": "guidebook",
+    "icon": "book",
+    "desc": "原遊戲的圖鑑與說明，整理作物、果樹、動物、魚類與設備等內容。比較成長時間、產物與條件，替下一次擴建找方向。",
+    "facts": [
+      "作物、動物與魚類",
+      "設備與用途",
+      "解鎖與成長資料"
+    ],
+    "steps": [
+      "從原遊戲介面開啟圖鑑。",
+      "依主題查看品種和設施資訊。",
+      "比較條件，規劃下一步的經營。"
+    ],
+    "source": [
+      "ui",
+      "levels",
+      "crops",
+      "animals",
+      "fish",
+      "devices"
+    ],
+    "links": [
+      "crops",
+      "fish",
+      "power"
+    ]
+  },
+  {
+    "id": "sound",
+    "name": "聲音島",
+    "category": "創作與長期經營",
+    "type": "sound",
+    "icon": "deco",
+    "desc": "背景音樂、環境與操作音效，構成農場生活的聽覺層次。可依遊玩情境在原遊戲設定中調整。",
+    "facts": [
+      "背景音樂",
+      "環境聲與音效",
+      "聲音設定"
+    ],
+    "steps": [
+      "開啟原遊戲的設定。",
+      "依喜好調整音樂與音效。",
+      "在不同時段感受農場氣氛。"
+    ],
+    "source": [
+      "audio",
+      "ui"
+    ],
+    "links": [
+      "weather",
+      "decor"
+    ]
+  },
+  {
+    "id": "discovery",
+    "name": "流星許願島",
+    "category": "創作與長期經營",
+    "type": "discovery",
+    "icon": "deco",
+    "desc": "原遊戲夜間有零星流星，也依日期安排七種流星雨。下雨時不顯示；點中流星可以許願，每晚最多 10 次，依原設定取得金幣、經驗或已解鎖作物種子。",
+    "facts": [
+      "夜間流星與七種流星雨",
+      "點流星許願，每晚最多 10 次",
+      "獎勵可能是金幣、經驗或種子"
+    ],
+    "steps": [
+      "在沒有下雨、天空夠暗的夜間留意流星。",
+      "點中流星進行許願。",
+      "查看取得的獎勵與每晚次數。"
+    ],
+    "source": [
+      "meteors.showers",
+      "meteors.wish",
+      "meteors.tap"
+    ],
+    "links": [
+      "moon-path",
+      "weather",
+      "achievements"
+    ]
+  },
+  {
+    "id": "checkin",
+    "name": "每日簽到島",
+    "category": "原作細節導覽",
+    "type": "calendar",
+    "icon": "book",
+    "desc": "每日簽到有獨立的獎勵與彈窗，是回到農場時可以查看的日常內容。",
+    "facts": [
+      "每日獎勵",
+      "簽到彈窗",
+      "依原設定時區"
+    ],
+    "steps": [
+      "查看今日簽到狀態。",
+      "領取可用的每日獎勵。",
+      "回到農場繼續經營。"
+    ],
+    "source": [
+      "checkin"
+    ],
+    "links": [
+      "achievements"
+    ]
+  },
+  {
+    "id": "farm-news",
+    "name": "農場新聞島",
+    "category": "原作細節導覽",
+    "type": "newsboard",
+    "icon": "book",
+    "desc": "農場新聞整理離線期間與經營中的事件，也記錄自動化夥伴完成的工作。",
+    "facts": [
+      "離線事件",
+      "自動化工作",
+      "農場通知"
+    ],
+    "steps": [
+      "回到農場查看新聞。",
+      "閱讀事件與工作摘要。",
+      "依事件調整照顧和派工。"
+    ],
+    "source": [
+      "news",
+      "robots.report"
+    ],
+    "links": [
+      "robot-water"
+    ]
+  },
+  {
+    "id": "coin-log",
+    "name": "金幣歷程島",
+    "category": "設施與經營",
+    "type": "coinlog",
+    "icon": "book",
+    "desc": "金幣歷程依日期、原因與單筆異動整理；繳帳單的紀錄可進一步看費用明細。",
+    "facts": [
+      "依日期",
+      "依原因",
+      "單筆帳單明細"
+    ],
+    "steps": [
+      "開啟金幣歷程。",
+      "展開日期與收入支出原因。",
+      "查看單筆明細與帳單。"
+    ],
+    "source": [
+      "coinLog",
+      "billing"
+    ],
+    "links": [
+      "billing"
+    ]
+  },
+  {
+    "id": "land-expansion",
+    "name": "土地擴張與新島",
+    "category": "原作細節導覽",
+    "type": "island-expansion",
+    "icon": "book",
+    "desc": "土地擴張與開拓新島是同一套農場發展流程。每座農場島從 1 塊土地開始，每塊 10×10 格，同島最多 4 塊；滿 4 塊後開拓第 2 座島，新島再由 1 塊逐步擴張到 4 塊。",
+    "facts": [
+      "每塊 10×10 格",
+      "每座島 1 → 4 塊",
+      "滿 4 塊後開拓下一座島"
+    ],
+    "steps": [
+      "第 1 座島從 1 塊土地起步。",
+      "依等級與金幣條件，將同島擴張到 4 塊。",
+      "開拓第 2 座島，從新島第 1 塊重新擴張至 4 塊。"
+    ],
+    "source": [
+      "rules.maxBlocksPerMap",
+      "rules.blockSize",
+      "expansion.blocks",
+      "islands"
+    ],
+    "links": [
+      "capacity",
+      "decor",
+      "storage"
+    ]
+  },
+  {
+    "id": "roads",
+    "name": "道路島",
+    "category": "原作細節導覽",
+    "type": "roads",
+    "icon": "book",
+    "desc": "裝飾中的道路可以安排動線，連接的道路格會依鄰接關係呈現不同圖樣。",
+    "facts": [
+      "道路連接",
+      "農場動線",
+      "搬移與收回"
+    ],
+    "steps": [
+      "選擇道路類型。",
+      "逐格安排動線。",
+      "依設施配置調整道路。"
+    ],
+    "source": [
+      "decos",
+      "move"
+    ],
+    "links": [
+      "decor"
+    ]
+  },
+  {
+    "id": "fences",
+    "name": "柵欄島",
+    "category": "原作細節導覽",
+    "type": "fences",
+    "icon": "book",
+    "desc": "柵欄能組成牧場與景觀的邊界。原掠食者設定 fencesStop 為 false，因此不把柵欄描述為能擋住掠食者。",
+    "facts": [
+      "連接圖樣",
+      "牧場與景觀",
+      "非掠食者防護保證"
+    ],
+    "steps": [
+      "選擇柵欄。",
+      "安排圍界與視覺分區。",
+      "另依掠食者規則安排照顧。"
+    ],
+    "source": [
+      "decos",
+      "predators.fencesStop"
+    ],
+    "links": [
+      "guard",
+      "decor"
+    ]
+  },
+  {
+    "id": "sun-path",
+    "name": "太陽軌跡島",
+    "category": "日月與時間",
+    "type": "sunpath",
+    "icon": "book",
+    "desc": "原遊戲以農場地點與時間計算太陽方位、高度、日出與日落，而非只切換一張白天背景。",
+    "facts": [
+      "地點與日期",
+      "太陽高度與方位",
+      "日出與日落"
+    ],
+    "steps": [
+      "選擇展示日期與時間。",
+      "播放時間，觀察太陽移動。",
+      "比較不同時刻的日照。"
+    ],
+    "source": [
+      "sky.layers.sun",
+      "dayNight",
+      "cities"
+    ],
+    "links": [
+      "weather",
+      "power"
+    ]
+  },
+  {
+    "id": "moon-path",
+    "name": "月亮軌跡與月相島",
+    "category": "日月與時間",
+    "type": "moonphase",
+    "icon": "book",
+    "desc": "月亮位置與月相屬於同一個日月系統：日期、時間與地點決定月亮方位和高度，日期也決定亮面比例與月相。原作使用 24 格月亮素材呈現月相。",
+    "facts": [
+      "同一月亮系統",
+      "月出月落與夜間軌跡",
+      "日期連動月相與亮面比例"
+    ],
+    "steps": [
+      "選擇展示日期與時間。",
+      "觀察月亮位置的升起與落下。",
+      "切換日期，比較月相與亮面比例。"
+    ],
+    "source": [
+      "sky.layers.moon",
+      "dayNight",
+      "cities"
+    ],
+    "links": [
+      "sun-path",
+      "weather"
+    ]
+  },
+  {
+    "id": "grow-lights",
+    "name": "生長燈島",
+    "category": "設施與經營",
+    "type": "growlight",
+    "icon": "book",
+    "desc": "原遊戲有植物生長燈、大型生長燈與溫室生長燈，照明範圍、用電和適用環境需要分別安排。",
+    "facts": [
+      "一般與大型生長燈",
+      "溫室專用燈",
+      "照明與生長"
+    ],
+    "steps": [
+      "選擇適用環境的生長燈。",
+      "配置位置與供電。",
+      "查看夜間植物生長條件。"
+    ],
+    "source": [
+      "devices.grow_lamp",
+      "devices.grow_lamp_large",
+      "devices.gh_lamp"
+    ],
+    "links": [
+      "greenhouse",
+      "power"
+    ]
+  },
+  {
+    "id": "street-lights",
+    "name": "路燈島",
+    "category": "設施與經營",
+    "type": "streetlight",
+    "icon": "book",
+    "desc": "經典鑄鐵、花園矮燈、雙頭歐式與現代 LED 路燈，讓農場夜間佈置有不同選擇，並需安排供電。",
+    "facts": [
+      "四種路燈設定",
+      "夜間景觀",
+      "供電與配置"
+    ],
+    "steps": [
+      "選擇路燈款式。",
+      "沿道路與設施配置。",
+      "在夜間觀察光線與電力。"
+    ],
+    "source": [
+      "devices.street_lamp_classic",
+      "devices.street_lamp_garden",
+      "devices.street_lamp_double",
+      "devices.street_lamp_modern"
+    ],
+    "links": [
+      "roads",
+      "power"
+    ]
+  },
+  {
+    "id": "home",
+    "name": "浮島農場主島",
+    "category": "農場主島",
+    "type": "home",
+    "icon": "build",
+    "desc": "從農舍前的一塊田地出發，沿著橋走向種植、養殖、生態、自動化和經營群島。主島集合紅色農舍、水塔、田地與散步動物，是認識浮島農場的第一站。 原作另有公雞報曉：農場當地時間早上 6～9 點進入、有農舍時觸發，每天一次。",
+    "facts": [
+      "紅色農舍與水塔",
+      "田地與散步動物",
+      "沿橋探索玩法群島"
+    ],
+    "steps": [
+      "從主島認識浮島農場的生活。",
+      "沿橋選擇感興趣的介紹島。",
+      "了解玩法如何互相供應與分工。"
+    ],
+    "source": [
+      "tutorial",
+      "buildings.farmhouse",
+      "buildings.water_tower",
+      "easterEggs.rooster"
+    ],
+    "links": [
+      "crops",
+      "livestock",
+      "water",
+      "robot-water",
+      "land-expansion"
+    ]
+  }
+]
